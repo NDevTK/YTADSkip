@@ -1,0 +1,16 @@
+{
+  "name": "YTADSkip",
+  "version": "1.0",
+  "description": "Skip youtube video adverts",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.youtube.com/*"
+      ],
+      "js": [
+        "ContentScript.js"
+      ]
+    }
+  ],
+  "manifest_version": 2
+}
