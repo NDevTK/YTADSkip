@@ -9,5 +9,5 @@ function SkipAdvert(){
 if(document.getElementsByClassName("ytp-ad-player-overlay").length == 1){
 var v = document.querySelector('video');
 v.currentTime = 1000
-setTimeout(function(){ v.play() }, 100);
+setTimeout(function(){ v.play() }, 500);
 }}
