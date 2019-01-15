@@ -1,10 +1,11 @@
 chrome.tabs.onUpdated.addListener(
   function(tabId, changeInfo, tab) {
-    if (youtube_parser(changeInfo.url)) {
+    if (changeInfo.url) {
+	  if(youtube_parser(changeInfo.url)){
       chrome.tabs.sendMessage( tabId, {
-        message: 'ytvideo',
-        url: changeInfo.url
+        message: 'ytvideo'
       })
+	  }
     }
   }
 );
